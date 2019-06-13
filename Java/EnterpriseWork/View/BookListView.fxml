@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuButton?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="517.0" prefWidth="745.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <ListView fx:id="BookList" layoutX="6.0" layoutY="85.0" prefHeight="388.0" prefWidth="716.0" />
+      <Label layoutX="216.0" layoutY="38.0" prefHeight="40.0" prefWidth="148.0" text="Book List" underline="true">
+         <font>
+            <Font size="36.0" />
+         </font>
+      </Label>
+      <MenuBar layoutX="6.0" layoutY="14.0" prefHeight="25.0" prefWidth="733.0">
+        <menus>
+          <Menu mnemonicParsing="false">
+               <graphic>
+                  <MenuButton mnemonicParsing="false" text="Menu">
+                     <items>
+                    <MenuItem fx:id="menu" mnemonicParsing="false" onAction="#MenuOnAction" text="Log Out" />
+                        <MenuItem fx:id="Quit" mnemonicParsing="false" onAction="#QuitOnAction" text="Quit" />
+                     </items>
+                  </MenuButton>
+               </graphic>
+          </Menu>
+          <Menu mnemonicParsing="false">
+               <graphic>
+                  <MenuButton mnemonicParsing="false" text="Database">
+                     <items>
+                        <MenuItem fx:id="authorId" mnemonicParsing="false" onAction="#AuthorOnAction" text="Modify Authors" />
+                    <MenuItem fx:id="createId" mnemonicParsing="false" onAction="#CreateOnAction" text="Create Book" />
+                     </items>
+                  </MenuButton>
+               </graphic>
+          </Menu>
+        </menus>
+      </MenuBar>
+      <Button fx:id="firstPageId" layoutX="6.0" layoutY="473.0" mnemonicParsing="false" onAction="#FirstPageOnAction" text="First Page" />
+      <Button fx:id="previousPageId" layoutX="170.0" layoutY="473.0" mnemonicParsing="false" onAction="#PrevoiusPageOnAction" text="Previous Page" />
+      <Button fx:id="nextPageId" layoutX="485.0" layoutY="473.0" mnemonicParsing="false" onAction="#NextPageOnAction" text="Next Page" />
+      <Button fx:id="lastPageId" layoutX="655.0" layoutY="473.0" mnemonicParsing="false" onAction="#LastPageOnAction" text="Last Page" />
+      <Label fx:id="pageInfoId" layoutX="305.0" layoutY="477.0" prefHeight="25.0" prefWidth="133.0" text="Content: 1 - 50" />
+      <TextField fx:id="searchId" layoutX="496.0" layoutY="52.0" promptText="Search..." />
+      <Button fx:id="SearchBId" layoutX="655.0" layoutY="52.0" mnemonicParsing="false" onAction="#SearchOnAction" text="Search" />
+      <Label fx:id="nameLabelId" layoutX="6.0" layoutY="48.0" prefHeight="33.0" prefWidth="207.0" text="Hello, ">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.MenuButton?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="514.0" prefWidth="653.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <ImageView fitHeight="507.0" fitWidth="653.0" layoutY="68.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../Resource/BookDetails.jpg" />
+         </image>
+      </ImageView>
+      <Button fx:id="ReturnB" layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#ReturnBOnAction" prefHeight="39.0" prefWidth="95.0" text="Return " />
+      <TextField editable="false" layoutY="68.0" prefHeight="25.0" prefWidth="653.0" text="Create Book" />
+      <TextField editable="false" layoutX="71.0" layoutY="97.0" promptText="Name" text="Create Title: " />
+      <TextField editable="false" layoutX="71.0" layoutY="363.0" text="Create ISBN:" />
+      <TextField editable="false" layoutX="71.0" layoutY="300.0" text="Create Date Published:" />
+      <TextField editable="false" layoutX="71.0" layoutY="227.0" text="Create Summary:" />
+      <TextField fx:id="TextTitle" layoutX="286.0" layoutY="97.0" prefHeight="25.0" prefWidth="258.0" />
+      <TextField fx:id="TextDatePublished" layoutX="286.0" layoutY="300.0" prefHeight="25.0" prefWidth="258.0" />
+      <TextField fx:id="TextSummary" layoutX="287.0" layoutY="227.0" prefHeight="61.0" prefWidth="258.0" />
+      <TextField fx:id="TextISBN" layoutX="287.0" layoutY="363.0" prefHeight="25.0" prefWidth="258.0" />
+      <TextField editable="false" layoutX="71.0" layoutY="333.0" text="Create Genre:" />
+      <TextField fx:id="TextGenre" layoutX="286.0" layoutY="333.0" prefHeight="25.0" prefWidth="258.0" />
+      <TextField editable="false" layoutX="71.0" layoutY="135.0" text="Create Author:" />
+      <TextField fx:id="TextAuthor" disable="true" editable="false" layoutX="328.0" layoutY="21.0" prefHeight="25.0" prefWidth="258.0" visible="false" />
+      <Button fx:id="Createid" layoutX="243.0" layoutY="445.0" mnemonicParsing="false" onAction="#CreateOnAction" prefHeight="48.0" prefWidth="139.0" text="Create" />
+      <TextArea fx:id="TextAreaid" layoutX="283.0" layoutY="227.0" prefHeight="61.0" prefWidth="265.0" promptText="Waiting..." />
+      <ComboBox fx:id="PubID" layoutX="307.0" layoutY="398.0" prefWidth="150.0" promptText="Publisher" />
+      <TextField editable="false" layoutX="71.0" layoutY="398.0" text="Choose Publisher" />
+      <ListView fx:id="AuthorListid" layoutX="283.0" layoutY="135.0" prefHeight="83.0" prefWidth="265.0" />
+      <MenuButton layoutX="562.0" layoutY="135.0" mnemonicParsing="false" text="Author">
+        <items>
+          <MenuItem fx:id="AddAuthid" mnemonicParsing="false" onAction="#AddAuthOnAction" text="Add" />
+          <MenuItem fx:id="DeleteAuthid" mnemonicParsing="false" onAction="#DeleteAuthOnAction" text="Delete" />
+        </items>
+      </MenuButton>
+   </children>
+</AnchorPane>
