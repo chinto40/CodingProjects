@@ -1,1 +1,2 @@
-projects
+My recent C file project: 
+Uses Threads for mulitple files read in and counts the words on each file, Prints them to the console. 
