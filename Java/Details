@@ -1,25 +1,24 @@
-Game Project-
-This project is a 2d tile based Game.
-What i Contributed:
- - Worked on all Object including Game Logic, game loop, animation, etc... 
- - Only thing i didn't have a hand in creating/ or helping was 
-    the map parser, the menu Gui, and the Game Art. 
-
-PlanetSQLPriject- 
+PlanetSQLPriject- (Recent)
 This Project purpose was to read in user input to create a planet and log that data in to a remote mySql database and read and 
 render the planet to the screen. The gateway singleton class purpose is to read and write to the database, so it acts a a connection
 between the project and the sql database. 
-
 What i Contributed:
 - I coded all the models in the project. 
 - The Gateway singleton class.
 - Helped with the controller classes. 
 
 
-EnterpriseProject-
-Enterprise software engineer project. 
+EnterpriseProject- (Recent)
+Enterprise software engineer project Reading and writing Book Published book from a database and displaying them on the GUI. 
 Was a single person project so this is my own, I added more functionality as time went on and had to make certain changes to the project.
 includes: 
 - Multithreading
 - Singleton Design pattern
 - pagination
+
+Game Project-
+This project is a 2d tile based Game.
+What i Contributed:
+ - Worked on all Object including Game Logic, game loop, animation, etc... 
+ - Only thing i didn't have a hand in creating/ or helping was 
+    the map parser, the menu Gui, and the Game Art. 
