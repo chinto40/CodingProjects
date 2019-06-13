@@ -14,7 +14,7 @@ Was a single person project so this is my own, I added more functionality as tim
 includes: 
 - Multithreading
 - Singleton Design pattern
-- pagination
+- pagination GUI - reads 50 records from the database out of 100,000 records at a time. 
 
 Game Project- (2018)
 This project is a 2d tile based Game.
