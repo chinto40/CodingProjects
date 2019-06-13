@@ -1,4 +1,4 @@
-PlanetSQLPriject- (Recent)
+PlanetSQLPriject- (Recent) (Added my part)
 This Project purpose was to read in user input to create a planet and log that data in to a remote mySql database and read and 
 render the planet to the screen. The gateway singleton class purpose is to read and write to the database, so it acts a a connection
 between the project and the sql database. 
