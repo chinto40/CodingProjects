@@ -22,3 +22,4 @@ What i Contributed:
  - Worked on all Object including Game Logic, game loop, animation, etc... 
  - Only thing i didn't have a hand in creating/ or helping was 
     the map parser, the menu Gui, and the Game Art. 
+    ** Inheritance is wrong , but there is a reson and a story behind this.** 
